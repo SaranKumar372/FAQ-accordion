@@ -14,16 +14,15 @@ body {
    background-color: hsl(275, 100%, 97%);
    background-image: url("./assets/images/background-pattern-desktop.svg");
    background-repeat: no-repeat;
-   background-attachment: fixed;
+   background-size: contain;
    background-position:top;
-   background-size:100vw 49.1vh;
    font-family: "Work Sans";
 }
 
 section {
     background-color: hsl(0, 0%, 100%);
     width:60%;
-    margin:5% auto;
+    margin:8% auto;
     padding:3em;
     border-radius: 1em;
 }
@@ -39,11 +38,17 @@ p {
     font-size: 1em;
 }
 h2 {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 h1 {
     font-size: 1.5em;
 }
+hr {
+    height: 1px;  /* Adjust thickness */
+    border: none;  /* Remove default border */
+    background-color: #ccc;  /* Optional: Change color */
+  }
+  
 .heading, .content, h2, p {
     margin-bottom: 1em;
 }
@@ -64,9 +69,7 @@ h1 {
 @media screen and (max-width:375px) {
     body {
         background-image: url("./assets/images/background-pattern-mobile.svg");
-        background-attachment: fixed;
         background-position:top;
-        background-size:100% 50%;
     }
     section {
         width:90%;
